@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Central Authentication Service - IIIT Hyderabad</title>
+
+    <meta name="_csrf" content=""/>
+    <meta name="_csrf_header" content=""/>
+
+    
+    <link rel="stylesheet" href="/cas/css/cas.css" />
+    <link rel="icon" href="/cas/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="images/iiit-new.png" />
+        </header>
+        <main class="content">
+            <h1>Central Authentication Service (CAS)</h1>
+
+
+
+
+<div id="cookiesDisabled" class="errors" style="display:none;">
+    <h2>Browser cookies disabled</h2>
+    <p>Your browser does not accept cookies. Single Sign On WILL NOT WORK.</p>
+</div>
+
+
+
+<div class="row">
+    <div class="col-half form">
+        <form id="fm1" action="/cas/login" method="post">
+            <h2>Login</h2>
+            <label for="username">
+                Email
+                
+                    
+                    
+                        
+                        <input id="username" name="username" class="required" tabindex="1" type="email" required="required" accesskey="u" value="" autocomplete="off"/>
+                    
+                
+            </label>
+            <label for="password">
+                Password
+                <input id="password" name="password" class="required" tabindex="2" required="required" type="password" value="" autocomplete="off"/>
+            </label>
+            <span id="capslock-on" style="display:none;"><p class="capslock-msg"><img src="images/warning.png"> CAPSLOCK key is turned on!</p></span>
+
+            
+
+            
+
+            <div class="label">
+                <input class="btn-submit submit" name="submit" accesskey="l" value="LOGIN" tabindex="6" type="submit" />
+                
+            </div>
+            <input type="hidden" name="execution" value="801ca0a2-325f-41b3-bd0d-2076a85a623d_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuZERKblJXTkJRbEZXVjNGSWNFUjZZWGt6WWpCUFR6UndWek5RZGxoVWJWbEphamcxVmxkbVUyVkZMelJNVlhSM2NYcHFkMFp0UTI5UmRXUnlRa2hQVDFFNFVGUk5USGt2ZG01VFZuZGFPRlJxTWtWdlZtOTFhakEyY0dkcVlqTnJNbHBvYm5GVU1tdGxSa2Q0YjBkcVZHWlNVeXQ1TWtveE4zQlVPRWxSU2pGV1ZHNHhlSE0wT0NzeE9ERlFlWFZOVEZwb1VVOXJiSFl5WTNoVWJtTXlZbGszVWpBNVRscDFURGxZYUVjNWNuWXZVVWRJYjJ4b1dVSmxSbkZQVlhCb2NtTnRUVnB6VW05TU5tYzNkWG80Y1U1aU9VdEpWMk5yTm1kTk1FZ3ZNekI0U21wc2VHbDViMHQyTTFkUVVFTTVTbWRwTjNvd2N6ZE1ZbmRsYm1oUVJsY3dWMDlJUlhGNmVrTlljVmhpV0V4bFYweHhRbTRyVUZweFNFTTRWMVJFWkdOTVRGWkdlbW95VFZoVFVqVkRTa00xTURJeWMyTnlWREV4U1UwMVdtTlllbTlPU1ZOeWFWVktUbGxtY21SU1NrZEZPRU01ZDBOS2EyRjBiV0ZvVEZacWFGZDBVa05MVUdoalFrRXZhRzl6WXpOdWRGWlFaRzUxUkhKcFVFcHZUSFJzV1VoSFdWWkNlU3R4T1VaaVIxWkpWR1Y2YzBGNFJ5dHhhbFJ5VkVRclVubHNVV1Y2YkU1NlNWTnZSVlJyVG5sRGVuQjFhRUYxYlhkS1dXVjBRMmhGVm1FMFJ6UnNUV2hHWW1kR1FUWkVZMUJNTkZSalFXUmtXSFp2WlhkdlRteHJSMUpMUkdOb2FFUmhRM0p2VFVoRVRGSkhibXMyZVVjdmJWbDJOMUZhTm0xNVIwaFJZakIxWm01dlJVWlZSWGxaYVVkRWNHdENiRkZsYTNsdldEZFdaR1pYUVhSemNISkRZV0ZsVW5sQ2IxaGhaelpJWWpGSGJVdGFaelJZUlZWbVkxb3JVMGhuY1ZFNFNHeEpORWN2VlZoVlYybElTRms1ZFROUmJEZFFjbEpUTUVsUGRrdENURkJtVjFkU1JHVnhRbGRGUzFwcmRYZHdkVk5VUTJoNFFsVlVPRzFCWlc1dmRHRjFURWxCT0hOVmVVWkhZMGQ1VTA1dmFWbFhNbmR5Y0d4b0wxSXhOMnhuWTJWRmVHNHJWVXBTWVRSdmQzSlZNSEpET1haelZURldVSGRRZFdSbGNqYzFhbVU0UW1GdlJuTkpNRzlsU2pGcGIzVlNVR3RPWTNWT2NVcFFOR052ZWk5VFNrUlZZMlZoVEUxNWQycE1lSFExTmtrd0swOVhaVmN6UzBkemFtOW5RbXByVWpSaFJVZHhXbWhKTjFwTWJVZDRXbGg2YzJvclQwMHlWbk5FYlZkNWJIQnVha2hMVkZka2QzRmpXRVVyUVcxeWFYRktiRk4xWkhkaGIxSlZkVTkwY1RCM1ZVeHNkV0oxY21GME5FUjNhazFvYTFjemIwMXdSMFJRYVRoa2JGWklUbXd5WldwV2RGZHlURXBUYkRGelFpOTVNbkJvT1UxWmVHRTVORGxpVGtZd1RrNWxUR2RLUzBWb2NsUm9hMVEyYUcxeVlYUXZRbXRwYlRaQlBRLl9RMmdkLWM5dHdxb2V4dWUyRDBxSy1Rb1NmckFHZDFQY3Z2Z2tGNjBjYlJiVXNyb090Z0c5VkNqWWNiazB5SU1leWlYOHppN3Z4OW5wNGN0b1JJcEZR" />
+            <input type="hidden" name="_eventId" value="submit" />
+            <a href="https://passwordreset.iiit.ac.in">Change password</a>
+        </form>
+    </div>
+    <div class="col-half note">
+        <h2>Note: </h2>
+        <ol>
+            <li>Since CAS does not support Single Sign-Out as of now, please make sure you logout from all the applications and close the browser window when you have finished using the system.</li>
+            <li>IT Support will NEVER ask for your password and/or any other personal information. Please do not reply to any such mail and report them immediately to IT support</li>
+            <li>It is recommended you choose a strong password since this single password is your gateway to all the computing resources at IIIT-H</li>
+        </ol>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript" src="/cas/js/cas.js"></script>
+            </main>
+        <footer>
+            &copy; International Institute of Information Technology, Hyderabad
+        </footer>
+    </div>
+</body>
+</html>
+
